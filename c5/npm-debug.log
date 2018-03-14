@@ -7,7 +7,7 @@
 6 silly lifecycle c5@1.0.0~prestart: no script for prestart, continuing
 7 info lifecycle c5@1.0.0~start: c5@1.0.0
 8 verbose lifecycle c5@1.0.0~start: unsafe-perm in lifecycle true
-9 verbose lifecycle c5@1.0.0~start: PATH: /usr/lib/node_modules/npm/bin/node-gyp-bin:/home/student/Projects/SJSA-2017-NODE/c5/node_modules/.bin:/home/student/bin:/home/student/.local/bin:/home/student/bin:/home/student/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
+9 verbose lifecycle c5@1.0.0~start: PATH: /usr/lib/node_modules/npm/bin/node-gyp-bin:/home/student/Projects/SJSA-2017-NODE/c5/node_modules/.bin:/home/student/bin:/home/student/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
 10 verbose lifecycle c5@1.0.0~start: CWD: /home/student/Projects/SJSA-2017-NODE/c5
 11 silly lifecycle c5@1.0.0~start: Args: [ '-c', 'node index.js' ]
 12 silly lifecycle c5@1.0.0~start: Returned: code: 1  signal: null
