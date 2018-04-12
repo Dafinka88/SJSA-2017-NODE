@@ -119,6 +119,37 @@ app.delete("/api/users/:id", (req, res) => {
         return;
     });
 });
+// update a user
+app.patch('/api/users/:id', (req, res) => {
+	var hasPassword =
+		req.body.password != undefined && req.body.password != ''
+	var count = 0
+	for (var key in req.body)
+		if (req.body.hasOwnProperty(key))
+			count++
+	if (!hasPassword && count <= 1) {
+		res.status(400)
+		res.send('Bad Request')
+		return
+	} else {
+		User.findById(req.params.id, (err, user) => {
+			if (err) {
+				res.status(500)
+				res.send('Internal server error')
+				return
+			} else {
+				if (user.password === req.body.password) {
+					User.update({ _id: user._id }, {})
+				} else {
+					res.status(401)
+					res.send('Unauthorized')
+					return
+				}
+			}
+		})
+	}
+})
+
 
 app.listen(8080, () => {
     console.log('Server started on port 8080');
