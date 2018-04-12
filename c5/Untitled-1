@@ -1,0 +1,40 @@
+POST /users/
+
+{
+    "first name": "Dafinka",
+    "last name": "Pechorova",
+    "birthdate": "27.12",
+    "password": "...",
+    "email": "dafinka.pechorova88@hotmail.com",
+    "location":{
+            "country": "Macedonia",
+            "city": "Shtip",
+            "county": "..",
+            "street": "..",
+            "street_number": "7/3",
+            "geo": {
+                "longtitude": 1.1,
+                "latitude": 1.1
+            }
+      
+         }
+    }
+    GET /users
+    [
+        {
+            user
+        },
+        {
+            user
+        },
+    ]
+    GET /users/10
+    {
+        user
+    }
+
+    DELETE /users/10
+
+    PUT /users/10 -> overwrite whole object,
+    
+    PATCH /users/10/email -> update email address of user 10
