@@ -1,0 +1,26 @@
+{
+    firstname: String,
+    lastname: String,
+    email:String
+    handle: String, 
+    sid: String,
+    major:
+    {
+        id: ObjectId,
+        name: String
+    },
+    enrollmend_year : Date,
+    date_of_birth: Date,
+    classes: 
+    [
+        {
+            name: String,
+            id: ObjectId
+        },
+        {
+            name: String,
+            id: ObjectId
+        },
+    ],
+    
+}

@@ -1,0 +1,20 @@
+{
+    firstname: String,
+    lastName: String,
+    email: String,
+    date_of_birth: Date,
+    phone: String,
+    location: 
+    {
+        country: String,
+        city: String,
+        gps: 
+        {
+            lat: Number,
+            lng: Number
+        }
+    },
+    avatar: String,
+    password: String,
+
+}
