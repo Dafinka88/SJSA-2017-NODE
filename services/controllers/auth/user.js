@@ -268,6 +268,9 @@ module.exports = {
     changePassword,
     changeAvatar,
     changeHandle,
-    seefollowers,
+    seeFollowers,
+    seeFollowing,
+    follow,
+    unfollow,
     followUser,
 }
